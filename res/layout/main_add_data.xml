@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/half_dack_transparency"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/data_add_on"
+        layout="@layout/second_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/data_add_on"
+        android:background="@color/support_gray_more"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/main_add_data_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/add_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_two" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/one_gb"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/two_gb"
+                android:background="@drawable/gray_cirle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/data_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500M"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/data_money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€10.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/two_gb"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_cirle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/data_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1GB"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/data_money2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€20.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/five_gb"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/two_gb"
+                android:background="@drawable/gray_cirle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/data_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10GB"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/data_money3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€70.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_two" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/data_tab"
+                android:layout_width="118dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="70dp"
+                android:src="@drawable/blue_cirle_tab" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bug_data"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@color/red_dack"
+            android:text="Buy a 1GB data add-on"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_two" />
+
+        <Button
+            android:id="@+id/no_thanks"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@color/gray"
+            android:text="@string/no_thanks"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_two" />
+
+        <Button
+            android:id="@+id/browse_all_extras"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@color/gray"
+            android:text="@string/browse_all_extras"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_two"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
